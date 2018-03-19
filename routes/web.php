@@ -14,3 +14,5 @@
 Route::get('/', 'pagesController@root')->name('root');
 
 Auth::routes();
+
+Route::Resource('users','UsersController',['only' => ['update', 'edit', 'show']]);
