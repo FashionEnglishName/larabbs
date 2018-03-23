@@ -10,7 +10,7 @@ class TopicsTableSeeder extends Seeder
     public function run()
     {
         $faker = app(Faker\Generator::class);
-    
+
         $user_ids = User::all()->pluck('id')->toArray();
 
         $category_ids = Category::all()->pluck('id')->toArray();
